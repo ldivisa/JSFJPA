@@ -4,7 +4,7 @@
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
     <properties>
       <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://depositodivisa2.hopto.org/estudos"/>
-      <property name="jakarta.persistence.jdbc.user" value="estudos"/>
+      <property name="jakarta.persistence.jdbc.user" value="Automoveis"/>
       <property name="jakarta.persistence.jdbc.password" value="Caralho@estudos1"/>
       <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
       <property name="hibernate.hbm2ddl.auto" value="update"/>
