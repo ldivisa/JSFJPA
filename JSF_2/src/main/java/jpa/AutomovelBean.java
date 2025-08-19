@@ -6,7 +6,6 @@ package jpa;
 
 
 import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.enterprise.context.SessionScoped;
 import jakarta.inject.Named;
 import java.io.Serializable;
 
@@ -18,7 +17,6 @@ import java.io.Serializable;
 @Named
 @ApplicationScoped
 public class AutomovelBean implements Serializable {
-
 
     private Automovel automovel = new Automovel();
 
@@ -32,6 +30,8 @@ public void setAutomovel(Automovel automovel){
 }
 
 public void grava(){
+    PersistidorDeAutomovel Persis;
+    Persis = new PersistidorDeAutomovel();
     System.out.println("Marca:" + automovel.getMarca());
    
 }
