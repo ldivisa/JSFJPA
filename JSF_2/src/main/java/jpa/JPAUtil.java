@@ -20,7 +20,7 @@ import jakarta.persistence.Persistence;
 public class JPAUtil {
 
     private static final EntityManagerFactory emf =
-            Persistence.createEntityManagerFactory("default");
+            Persistence.createEntityManagerFactory("Automovel");
 
 
     public static EntityManager getEntityManager(){
