@@ -35,5 +35,24 @@ public class PersistidorDeAutomovel {
             //emf.close();--> criado por JPAUtil.java
         //}
     }
+public static void gravar() {
+        System.out.println("\n Persistidor instanciado - funcao gravar");
+        //try (
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
+        EntityManager em = emf.createEntityManager();
+        //EntityManager em = JPAUtil.getEntityManager();
+        
+           // ) {
+            Automovel auto = new Automovel();
+            auto.setAnoFabricacao(2011);
+            auto.setModelo("Ferrari");
+            auto.setObservacoes("Nunca foi batido");
+            EntityTransaction tx = em.getTransaction();
+            tx.begin();
+            em.persist(auto);
+            tx.commit();
+            //emf.close();--> criado por JPAUtil.java
+        //}
+    }
 
 }

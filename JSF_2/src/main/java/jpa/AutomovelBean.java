@@ -30,8 +30,9 @@ public void setAutomovel(Automovel automovel){
 }
 
 public void grava(){
-    PersistidorDeAutomovel Persis;
-    Persis = new PersistidorDeAutomovel();
+    PersistidorDeAutomovel persis;
+    persis = new PersistidorDeAutomovel();
+    persis.gravar();
     System.out.println("Marca:" + automovel.getMarca());
    
 }
